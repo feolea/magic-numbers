@@ -2,6 +2,6 @@
 
 source 'https://rubygems.org'
 
-gem 'rspec'
-gem 'rubocop'
-gem 'simplecov', require: false, group: :test
+gem 'rspec', '~> 3.8'
+gem 'rubocop', '~> 0.59'
+gem 'simplecov', '~> 0.16', require: false, group: :test
