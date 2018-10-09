@@ -1,7 +1,12 @@
 # frozen_string_literal: true
 
+require 'prime'
 require 'simplecov'
 SimpleCov.start
+
+Dir[File.join('./lib', '**/*.rb')].each do |f|
+  require f
+end
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
