@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'prime'
+require 'pry'
 require 'simplecov'
 SimpleCov.start
 
