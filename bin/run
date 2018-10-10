@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+# frozen_string_literal: true
+
+require 'yaml'
+
+puts 'Please type the list of intervals:'
+
+list = YAML.safe_load(gets.chomp)
+
+Dir[File.join('./lib', '**/*.rb')].each do |f|
+  require f
+end
+
+count = Services::MagicCounter.new(list: list).call
+
+puts "There are #{count} magic numbers in your list!"
