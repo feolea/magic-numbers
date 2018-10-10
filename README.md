@@ -1,7 +1,5 @@
 # Magic-Numbers
 
-## Summary
-
 ## About
 
 This system was developed as a skill test. The original instructions are:
@@ -12,6 +10,14 @@ This system was developed as a skill test. The original instructions are:
 
 
 ## Usage
+
+To try it from terminal, after setup, you could just run:
+
+`$ bin/run`
+
+And then input your list of intervals, like
+
+`[[8,27], [49,50]]`
 
 ## Setup
 
@@ -36,7 +42,4 @@ To run test suite, just:
 
 `$ rspec spec`
 
-It will print the coverage of tests too, in case you want to take a look in a more detailed coverage report, just open in your browser the file generated at `magic-numbers/coverage/index.html`
-
-## Comments
-
+It will print the coverage of tests too, in case you want to take a look in a more detailed coverage report, just open in your browser the file generated at `your-path/magic-numbers/coverage/index.html`
