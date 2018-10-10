@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'prime'
+
 module Services
   class MagicIdentifier
     attr_reader :number
